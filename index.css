@@ -1,0 +1,78 @@
+body {
+    color: #39FF14;
+    background-color: #000328;
+    font-family: "Audiowide", sans-serif;
+    padding-left: 1.5em;
+    width: 360px;
+}
+/* Layout */
+nav{
+    padding-top: 0;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+ul > li{
+    font-size: 1.2em;
+    line-height: 200%;
+    text-decoration: underline;
+}
+main {
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.top-arrow {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.thumbnail-top, .thumbnail-middle, .thumbnail-bottom {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.bottom-arrow {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.thumbnail-img {
+    width: 160px;
+    height: 100px;
+    background-color: grey;
+}
+.icon-container{
+    display: flex;
+    gap: 5px;
+    width: 340px;
+    justify-content: end;
+    margin-top: 10px;
+}
+/* Typography */
+h1{
+    font-size: 2em;
+    margin-bottom: 0;
+}
+
+/* Images and Icons */
+img {
+    width: 40px;
+    height: 40px;
+}
+.img-top-arrow {
+    width: 50px;
+    height: 50px;
+}
+.img-bottom-arrow {
+    rotate: 270deg;
+    width: 50px;
+    height: 50px;
+}
+.img-thumbnail{
+    width: 50px;
+    height: 50px;
+}
