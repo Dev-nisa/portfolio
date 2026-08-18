@@ -47,10 +47,12 @@ main {
 }
 .icon-container{
     display: flex;
-    gap: 5px;
+    gap: 15px;
     width: 340px;
-    justify-content: end;
-    margin-top: 10px;
+    justify-content: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #39FF14;
 }
 /* Typography */
 h1{
@@ -72,7 +74,75 @@ img {
     width: 50px;
     height: 50px;
 }
-.img-thumbnail{
-    width: 50px;
-    height: 50px;
+/* Media queries */
+/* Tablet */
+@media (min-width: 768px){
+    body {
+        width: 768px;
+        border: 1px solid pink;
+    }
+    h1{
+        font-size: 2.5em;
+        margin-bottom: 20px;
+    }
+    ul > li{
+        font-size: 1.5em;
+    }
+    main{
+        width: 100%;
+        gap: 30px;
+    }
+    .top-arrow{
+        margin-left: 45%;
+        rotate: 45deg;
+    }
+    .img-top-arrow, .img-bottom-arrow{
+        width: 75px;
+        height: 75px;
+    }
+    .thumbnail-top{
+        margin-left: 25%;
+    }
+    .thumbnail-bottom{
+        margin-left: -25%;
+    }
+    .bottom-arrow{
+        margin-left: -45%;
+        rotate: 45deg;
+    }
+    .icon-container{
+        border-top: none;
+        width: 100%;
+        margin-left: 35%;
+    }
+}
+/* PC */
+@media (min-width: 1260px){
+    body {
+        border: 1px dotted orange;
+        width: 100%;
+    }
+    h1{
+        font-size: 3em;
+        margin-bottom: 20px;
+    }
+    ul > li{
+        font-size: 1.8em;
+    }
+    main{
+        width: 100%;
+        gap: 30px;
+    }
+    .top-arrow{
+        margin-left: 40%;
+        rotate: 45deg;
+    }
+    .img-top-arrow, .img-bottom-arrow{
+        width: 100px;
+        height: 100px;
+    }
+    .thumbnail-img{
+        width: 150px;
+        height: 175px;
+    }
 }
