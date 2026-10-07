@@ -1,0 +1,148 @@
+body {
+    color: #39FF14;
+    background-color: #000328;
+    font-family: "Audiowide", sans-serif;
+    padding-left: 1.5em;
+    width: 360px;
+}
+/* Layout */
+nav{
+    padding-top: 0;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+ul > li{
+    font-size: 1.2em;
+    line-height: 200%;
+    text-decoration: underline;
+}
+main {
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.top-arrow {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.thumbnail-top, .thumbnail-middle, .thumbnail-bottom {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.bottom-arrow {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.thumbnail-img {
+    width: 160px;
+    height: 100px;
+    background-color: grey;
+}
+.icon-container{
+    display: flex;
+    gap: 15px;
+    width: 340px;
+    justify-content: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #39FF14;
+}
+/* Typography */
+h1{
+    font-size: 2em;
+    margin-bottom: 0;
+}
+
+/* Images and Icons */
+img {
+    width: 40px;
+    height: 40px;
+}
+.img-top-arrow {
+    width: 50px;
+    height: 50px;
+}
+.img-bottom-arrow {
+    rotate: 270deg;
+    width: 50px;
+    height: 50px;
+}
+/* Media queries */
+/* Tablet */
+@media (min-width: 768px){
+    body {
+        width: 768px;
+        border: 1px solid pink;
+    }
+    h1{
+        font-size: 2.5em;
+        margin-bottom: 20px;
+    }
+    ul > li{
+        font-size: 1.5em;
+    }
+    main{
+        width: 100%;
+        gap: 30px;
+    }
+    .top-arrow{
+        margin-left: 45%;
+        rotate: 45deg;
+    }
+    .img-top-arrow, .img-bottom-arrow{
+        width: 75px;
+        height: 75px;
+    }
+    .thumbnail-top{
+        margin-left: 25%;
+    }
+    .thumbnail-bottom{
+        margin-left: -25%;
+    }
+    .bottom-arrow{
+        margin-left: -45%;
+        rotate: 45deg;
+    }
+    .icon-container{
+        border-top: none;
+        width: 100%;
+        margin-left: 35%;
+    }
+}
+/* PC */
+@media (min-width: 1260px){
+    body {
+        border: 1px dotted orange;
+        width: 100%;
+    }
+    h1{
+        font-size: 3em;
+        margin-bottom: 20px;
+    }
+    ul > li{
+        font-size: 1.8em;
+    }
+    main{
+        width: 100%;
+        gap: 30px;
+    }
+    .top-arrow{
+        margin-left: 40%;
+        rotate: 45deg;
+    }
+    .img-top-arrow, .img-bottom-arrow{
+        width: 100px;
+        height: 100px;
+    }
+    .thumbnail-img{
+        width: 150px;
+        height: 175px;
+    }
+}
