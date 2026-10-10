@@ -1,6 +1,6 @@
 body {
     color: #39FF14;
-    background-color: #000328;
+    background-image: radial-gradient(circle, #300E68 40%, #000328 100%);
     font-family: "Audiowide", sans-serif;
     padding-left: 1.5em;
     width: 360px;
